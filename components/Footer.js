@@ -5,7 +5,7 @@ import Icon from "./Icon/Icon";
 const linkStyle = "underline hover:outline-light focus:outline-light";
 const Footer = () => {
   return (
-    <footer className="bg-wave-dark bg-cover bg-repeat h-48 px-4 py-3 flex flex-col items-center justify-end">
+    <footer className="bg-wave-dark bg-cover bg-repeat h-48 py-3 flex flex-col items-center justify-end">
       <div className="text-light font-mono text-sm text-center">
         <span>Built with</span> <Icon name="heart" /> by{" "}
         <a

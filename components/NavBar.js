@@ -8,7 +8,7 @@ const NavBar = ({ isAuthenticated }) => {
   const handleLogout = () => null; // TODO - add logout function
   return (
     <nav className="py-3">
-      <div className="px-4 flex items-center container mx-auto">
+      <div className="flex items-center container mx-auto">
         <Logo />
         {isAuthenticated ? (
           <Button
