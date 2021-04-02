@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Button from "../components/Button";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (
@@ -27,7 +29,16 @@ export default function Home() {
         <meta name="theme-color" content="#041D35" />
       </Head>
 
-      <main className="">Hello world!</main>
+      <NavBar />
+      <main className="px-4">
+        <header className="mt-8">
+          <h1 className="font-serif text-4xl">Welcome to Captain's Log</h1>
+          <p className="font-mono text-lg mt-3">
+            Your daily diary, in the cloud (with a touch of pirate)
+          </p>
+        </header>
+        <Button label="Shiver me timbers!" className="mt-6" />
+      </main>
     </div>
   );
 }
