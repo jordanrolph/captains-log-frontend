@@ -15,8 +15,11 @@ export default function SignUp() {
 
       <main className="mt-16 flex flex-col items-center">
         <h1 className="text-5xl text-center">Ahoy there Scallywag!</h1>
+        <p className="font-mono mt-3">
+          Create an account to start your own diary
+        </p>
 
-        <form onSubmit={handleSignUp} className="mt-2 mb-12">
+        <form onSubmit={handleSignUp} className="mt-4 mb-16">
           <Input />
           <Input />
           <Input />
