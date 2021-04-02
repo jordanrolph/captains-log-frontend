@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Logo = () => {
   return (
-    <div className="h-8 w-36 relative">
+    <div className="h-10 w-40 relative">
       <Image
         src="/logo.svg"
         alt="Captain's Log Logo"

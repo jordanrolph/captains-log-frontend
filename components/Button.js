@@ -3,12 +3,11 @@ import PropTypes from "prop-types";
 
 const variants = {
   primary: {
-    button:
-      "text-light bg-dark bg-pattern-dark rounded-md py-3 px-5 font-lg font-bold",
+    button: "text-light bg-dark bg-pattern-dark rounded-md py-3 px-5 font-bold",
     label: "text-light",
   },
   secondary: {
-    button: "text-dark bg-light bg-pattern-light py-3 px-5 font-lg font-bold",
+    button: "text-dark bg-light bg-pattern-light py-3 px-5 font-bold",
     label: "text-dark",
   },
   link: {
@@ -31,7 +30,7 @@ const Button = ({
       onClick={onClick}
       disabled={disabled}
       type={type}
-      className={`flex items-center font-serif bg-repeat focus:outline-dark hover:outline-dark ${variants[variant].button} ${className}`}
+      className={`flex items-center font-serif bg-repeat focus:outline-dark hover:outline-dark text-lg ${variants[variant].button} ${className}`}
     >
       <p className={`${variants[variant].label}`}>{label}</p>
     </button>
