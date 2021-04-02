@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <div className="h-8 w-36 relative">
       <Image
-        src="/logo.png"
+        src="/logo.svg"
         alt="Captain's Log Logo"
         layout="fill"
         objectFit="contain"
