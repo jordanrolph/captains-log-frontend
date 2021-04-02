@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="min-h-screen flex flex-col">
       <Head>
         <title>Captain's Log</title>
         <link
@@ -30,15 +31,16 @@ export default function Home() {
       </Head>
 
       <NavBar />
-      <main className="px-4">
-        <header className="mt-8">
-          <h1 className="font-serif text-4xl">Welcome to Captain's Log</h1>
-          <p className="font-mono text-lg mt-3">
+      <main className="px-4 flex flex-col md:items-center md:text-center items-start text-left container mx-auto flex-grow">
+        <header className="mt-12">
+          <h1 className="text-5xl">Welcome to Captain's Log</h1>
+          <p className="font-mono text-lg mt-5">
             Your daily diary, in the cloud (with a touch of pirate)
           </p>
         </header>
-        <Button label="Shiver me timbers!" className="mt-6" />
+        <Button label="Shiver me timbers!" className="mt-10" />
       </main>
+      <Footer />
     </div>
   );
 }

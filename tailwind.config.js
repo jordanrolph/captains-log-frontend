@@ -12,14 +12,15 @@ module.exports = {
       backgroundImage: (theme) => ({
         "pattern-dark": "url('../public/pattern-dark.svg')",
         "pattern-light": "url('../public/pattern-light.svg')",
+        "wave-dark": "url('../public/wave-dark.svg')",
       }),
       outline: {
-        light: ["2px dashed #F0DBAF", "2px"],
+        light: ["2px dashed #DACAA2", "2px"],
         dark: ["2px dashed #041D35", "2px"],
       },
     },
     colors: {
-      light: "#F0DBAF",
+      light: "#DACAA2",
       dark: "#041D35",
     },
   },

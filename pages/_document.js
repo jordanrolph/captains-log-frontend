@@ -27,7 +27,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
-        <body className="bg-light bg-pattern-light bg-repeat">
+        <body className="bg-light bg-pattern-light bg-repeat text-dark font-serif">
           <Main />
           <NextScript />
         </body>
