@@ -20,7 +20,7 @@ const NavBar = ({ isAuthenticated }) => {
         ) : (
           <StyledLink
             variant="link"
-            label="Sign in"
+            label="Land ahoy"
             href="/login"
             className="ml-auto -mb-2"
           ></StyledLink>
