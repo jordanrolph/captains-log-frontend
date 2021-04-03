@@ -4,10 +4,11 @@ import Link from "next/link";
 
 const variants = {
   primary: {
-    a: "text-light bg-dark bg-pattern-dark rounded-md py-3 px-5 font-bold",
+    a:
+      "text-light bg-dark bg-pattern-dark rounded-md py-3 px-5 font-bold text-lg",
   },
   link: {
-    a: "text-dark px-1",
+    a: "text-dark px-1 font-mono underline",
   },
 };
 
@@ -15,7 +16,7 @@ const StyledLink = ({ href, label, variant = "primary", className }) => {
   return (
     <Link href={href}>
       <a
-        className={`flex items-center font-serif bg-repeat focus:outline-dark hover:outline-dark text-lg ${variants[variant].a} ${className}`}
+        className={`flex items-center font-serif bg-repeat focus:outline-dark hover:outline-dark ${variants[variant].a} ${className}`}
       >
         {label}
       </a>

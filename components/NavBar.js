@@ -11,7 +11,7 @@ const NavBar = ({ isAuthenticated }) => {
     <nav className="py-3">
       <div className="flex items-center container mx-auto">
         <Link href="/">
-          <a>
+          <a className="focus:outline-dark hover:outline-dark">
             <Logo />
           </a>
         </Link>
@@ -29,7 +29,7 @@ const NavBar = ({ isAuthenticated }) => {
             label="Land ahoy"
             href="/login"
             className="ml-auto -mb-2"
-          ></StyledLink>
+          />
         )}
       </div>
     </nav>

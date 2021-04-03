@@ -34,11 +34,12 @@ export default function Login() {
         </form>
         <p className="font-mono mt-16 mb-12">
           Don't have an account?{" "}
-          <Link href="/sign-up">
-            <a className="underline focus:outline-dark hover:outline-dark">
-              Create one
-            </a>
-          </Link>
+          <StyledLink
+            variant="link"
+            label="Create one"
+            href="/sign-up"
+            className="inline-flex"
+          />
         </p>
       </main>
     </div>
