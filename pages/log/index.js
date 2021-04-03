@@ -1,10 +1,24 @@
+import { useEffect } from "react";
 import Head from "next/head";
-import Link from "next/link";
+import Router from "next/router";
 import NavBar from "../../components/NavBar";
 import StyledLink from "../../components/StyledLink";
 import EntryList from "../../components/EntryList";
+import useUser from "../../data/useUser";
 
 export default function Log() {
+  const { user, loading, loggedOut, mutate } = useUser();
+  // if logged out, redirect to the homepage
+  useEffect(() => {
+    if (loggedOut) {
+      Router.replace("/");
+    }
+  }, [loggedOut]);
+
+  if (!user) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <div className="">
       <Head>

@@ -1,12 +1,29 @@
+import { useEffect } from "react";
 import Head from "next/head";
+import Router from "next/router";
 import Button from "../components/Button";
 import Input from "../components/Input";
 import NavBar from "../components/NavBar";
 import StyledLink from "../components/StyledLink";
-import Link from "next/link";
+import useUser from "../data/useUser";
+import { login } from "../libs/auth";
 
 export default function Login() {
-  const handleLogin = () => null;
+  const { user, mutate } = useUser();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    login();
+    mutate(); // revalidate the SWR after logging in
+  };
+
+  // if logged in, redirect to the log page
+  useEffect(() => {
+    if (user) {
+      Router.replace("/log");
+    }
+  }, [user]);
+
   return (
     <div className="">
       <Head>
@@ -23,14 +40,21 @@ export default function Login() {
             placeholder="captain@annes-revenge.com"
             label="Email"
             id="email"
+            type="email"
+            required
           />
           <Input
             placeholder="••••••"
             label="Password"
             id="password"
             type="password"
+            required
           />
-          <Button label="Batten down the hatches" className="mt-6" />
+          <Button
+            label="Batten down the hatches"
+            className="mt-6"
+            type="submit"
+          />
         </form>
         <p className="font-mono mt-16 mb-12">
           Don't have an account?{" "}

@@ -6,6 +6,7 @@ const Input = ({
   label = "Some label",
   placeholder = "Some placeholder",
   type = "text",
+  required,
 }) => {
   return (
     <div className="mt-5">
@@ -17,6 +18,7 @@ const Input = ({
         placeholder={placeholder}
         type={type}
         id={id}
+        required={required}
       />
     </div>
   );
@@ -27,6 +29,7 @@ Input.propTypes = {
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   type: PropTypes.string,
+  required: PropTypes.bool,
 };
 
 export default Input;

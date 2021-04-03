@@ -20,10 +20,28 @@ export default function SignUp() {
         </p>
 
         <form onSubmit={handleSignUp} className="mt-4 mb-16">
-          <Input />
-          <Input />
-          <Input />
-          <Button label="Go on account" className="mt-6" />
+          <Input
+            required
+            placeholder="Blackbeard"
+            id="firstName"
+            type="text"
+            label="First Name"
+          />
+          <Input
+            required
+            placeholder="captain@annes-revenge.com"
+            id="email"
+            type="email"
+            label="Email"
+          />
+          <Input
+            required
+            placeholder="••••••"
+            id="password"
+            type="password"
+            label="Password"
+          />
+          <Button label="Go on account" className="mt-6" type="submit" />
         </form>
       </main>
     </div>

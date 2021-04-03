@@ -19,6 +19,6 @@ EntryCard.propTypes = {
   entry: PropTypes.shape({
     entryId: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
-    createdAt: PropTypes.string,
+    createdAt: PropTypes.number,
   }),
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import useSWR from "swr";
-import { fetcher } from "../utils/fetcher";
+import { fetcher } from "../libs/fetcher";
 import { API } from "../constants/api";
 import EntryCard from "./EntryCard";
 
