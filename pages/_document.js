@@ -59,7 +59,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://captainslog.xyz" />
           <meta
             property="og:image"
-            content="https://captainslog.xyz/public/og/og_image.png"
+            content="https://captainslog.xyz/public/og_image.png"
           />
         </Head>
         <body className="bg-light bg-pattern-light bg-repeat text-dark font-serif">
