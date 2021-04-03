@@ -7,4 +7,4 @@ const EntryDetail = ({ entryId }) => {
 
 EntryDetail.propTypes = {};
 
-export default entryDetail;
+export default EntryDetail;
