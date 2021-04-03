@@ -63,7 +63,7 @@ export default function Log() {
   return (
     <div className="">
       <Head>
-        <title>Captain's Log | Sign Up</title>
+        <title>Your daily diary, in the cloud | Captain's Log</title>
       </Head>
       <NavBar />
 
